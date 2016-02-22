@@ -6,7 +6,7 @@
 
 2. Fork this Repo
 
-3. Run Terminal/CMD and type composer install/update
+3. Run Terminal/CMD and type composer install
 
 4. npm install
 
@@ -20,7 +20,6 @@
 
 For more help, please visit these pages:
 Infyom: http://labs.infyom.com/laravelgenerator/docs/introduction
-
 
 Laravel: https://laravel.com/docs/5.2
 
