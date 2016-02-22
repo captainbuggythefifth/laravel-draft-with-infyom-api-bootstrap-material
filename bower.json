@@ -1,0 +1,29 @@
+{
+  "name": "laravel-material-bootstrapv2",
+  "description": "Laravel 5.2 with Material Bootstrap and Elixir",
+  "main": "",
+  "authors": [
+    "Gau <captainbuggythefifth@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Laravel",
+    "5.2",
+    "Materialize",
+    "Bootstrap",
+    "Elixir"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-material-design": "^0.5.8"
+  }
+}
