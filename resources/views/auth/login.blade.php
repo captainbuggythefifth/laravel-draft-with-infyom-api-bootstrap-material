@@ -58,6 +58,7 @@
                             </div>
                         </div>
                     </form>
+                    <a class="btn btn-info" href="{{ url('/auth/facebook') }}" role="button">LogIn with Facebook</a>
                 </div>
             </div>
         </div>

@@ -16,6 +16,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('/home', array('as' => 'home', 'uses' => function(){
+    return view('welcome');
+}));
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -59,3 +64,15 @@ Route::get('users/delete/{id}', [
     'as' => 'users.delete',
     'uses' => 'UsersController@destroy',
 ]);
+
+Route::group(['middleware' => ['web']], function () {
+
+    Route::get('auth/facebook', 'Auth\AuthController@redirectToProvider');
+
+    Route::get('auth/facebook/callback', 'Auth\AuthController@handleProviderCallback');
+
+    Route::get('auth/facebook/create', 'Auth\Social\FacebookSignUpController@create');
+
+    Route::put('auth/facebook/create', 'Auth\Social\FacebookSignUpController@store');
+
+});
